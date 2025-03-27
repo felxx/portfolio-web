@@ -3,10 +3,11 @@ body{
 }
 
 .navegacao ul{
+    padding-left: 0;
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .navegacao li {
@@ -36,4 +37,14 @@ h1{
 .icons{
     width: 40px;
     border-color: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #636363;
+    text-decoration: underline;
 }
