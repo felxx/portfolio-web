@@ -1,0 +1,39 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navegacao ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.navegacao li {
+    margin: 0 15px;
+}
+
+.navegacao a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.padrao a{
+    justify-content: center;
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.icons{
+    width: 40px;
+    border-color: none;
+}
