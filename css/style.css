@@ -2,25 +2,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.navegacao ul{
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 50px;
-}
-
-.navegacao li {
-    margin: 0 15px;
-}
-
-.navegacao a{
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: large;
-}
-
 .padrao a{
     justify-content: center;
 }
@@ -35,7 +16,7 @@ h1{
 }
 
 .icons{
-    width: 40px;
+    width: 50px;
     border-color: none;
 }
 
@@ -48,3 +29,5 @@ a:hover{
     color: #636363;
     text-decoration: underline;
 }
+
+
