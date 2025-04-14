@@ -22,3 +22,7 @@ function construirModal() {
         }
     });
 }
+
+var radio = document.querySelector('.nav-botao')
+
+document.getElementById('slide-1').checked = true;

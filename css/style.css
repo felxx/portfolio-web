@@ -140,3 +140,57 @@ textarea {
 .enviar:focus {
     transform: scale(1.1);
 }
+
+
+.carrossel{
+    overflow: hidden;
+}
+
+.carrossel input{
+    display: none;
+}
+
+.slides{
+    width: 300%;
+    display: flex;
+    transition: 1s;
+}
+
+.slides img{
+    width: 60%;
+    position: relative;
+    text-align: center;
+}
+
+.navegacao{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao .nav-botao{
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.navegacao .nav-botao:not(:last-child){
+    margin-right: 5px;
+}
+
+.navegacao .nav-botao:hover{
+    background-color: #000000;
+}
+
+#slide-1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#slide-2:checked ~ .primeiro{
+    margin-left: -100%;
+}
+
+#slide-3:checked ~ .primeiro{
+    margin-left: -200%;
+}

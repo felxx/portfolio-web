@@ -18,6 +18,7 @@
                         bem estruturado é essencial para um produto final de qualidade e, por isso, busco constantemente aplicar boas práticas durante o desenvolvimento dos meus projetos.
                     </p>    
                 </div>
+                
                 <div class="card-bottom">
                     <h2 id="habilidades">Habilidades</h2>
                     <img class="icons" src="img/java.webp" alt="Java">
@@ -37,14 +38,35 @@
                     </a></p>
 
                     <h2 id="projetos">Projetos</h2>
-                    <p>
-                        *Implementar carrossel de imagens dos projetos*
-                    </p>
 
-                    <h2 id="contato">Contato</h2>
-                    <a href="https://github.com/felxx"><button><img class="icons" src="img/github.png" alt="GitHub do Autor"></button></a>
-                    <a href="https://www.linkedin.com/in/igor-felipe-738139282/"><button><img class="icons" src="img/linkedin.png" alt="LinkedIn do Autor"></button></a>
-                    <a href="https://discord.gg/YzNGsWeW"><button><img class="icons" src="img/discord-logo.png" alt="Discord do Autor"|></button></a>
+                    <div class="carrossel">
+                        <input type="radio" name="carrosel" id="slide-1" checked>
+                        <input type="radio" name="carrosel" id="slide-2">
+                        <input type="radio" name="carrosel" id="slide-3">
+            
+                        <div class="slides primeiro">
+                            <div class="slide">
+                                <a href="https://github.com/cs-pi-2025-chihiro"><img src="img/divulgaif.jpg" alt="Link para o meu projeto DivulgaIF"></a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://github.com/felxx/simulador-banco"><img src="img/banco.jpg" alt="Link para o meu simulador de operações bancárias"></a>
+                            </div>
+                            <div class="slide">
+                                <a href="https://github.com/felxx/portfolio-web"><img src="img/portfolio.jpg" alt="Link para o projeto do meu portfólio"></a>
+                            </div>
+                        </div>
+                        <div class="navegacao">
+                            <label for="slide-1" class="nav-botao"></label>
+                            <label for="slide-2" class="nav-botao"></label>
+                            <label for="slide-3" class="nav-botao"></label>
+                        </div>
+                    </div>
+                    
+                    <div class="contato">
+                    <h2>Contato</h2>
+                    <a href="https://github.com/felxx"><button tabindex="-1"><img class="icons" src="img/github.png" alt="GitHub do Autor"></button></a>
+                    <a href="https://www.linkedin.com/in/igor-felipe-738139282/"><button tabindex="-1"><img class="icons" src="img/linkedin.png" alt="LinkedIn do Autor"></button></a>
+                    <a href="https://discord.gg/YzNGsWeW"><button tabindex="-1"><img class="icons" src="img/discord-logo.png" alt="Discord do Autor"|></button></a>
                     <button id="botao-email"><img class="icons" src="img/email.png" alt="Enviar e-mail para o autor"></button>
                 </div>
             </div>
@@ -73,5 +95,6 @@
         </div>
 
         <script src="js/script.js"></script>
+
     </body>
 </html>
