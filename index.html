@@ -9,18 +9,22 @@
 
     <body>
         <main>
+            <div class="botao-traduzir">
+                <button onclick="alterarIdioma()"><img class="icon-traduzir" src="img/translate.svg" alt="Alterar idioma"></button>                
+            </div>
+
             <div class="card">
                 <div class="card-top">
                     <img style="border-radius: 50%; width: 35%" src="img/minha imagem.jpg" alt="Imagem do autor do portfólio">
                     <h1 class="nome">Igor Felipe</h1>
-                    <p class="descricao">
+                    <p data-i18n="descricao" class="descricao">
                         Sou um estudante do terceiro ano de Bacharelado em Engenharia de Software apaixonado por tecnologia. Acredito que um projeto de software
                         bem estruturado é essencial para um produto final de qualidade e, por isso, busco constantemente aplicar boas práticas durante o desenvolvimento dos meus projetos.
                     </p>    
                 </div>
                 
                 <div class="card-bottom">
-                    <h2 id="habilidades">Habilidades</h2>
+                    <h2 data-i18n="habilidades" id="habilidades">Habilidades</h2>
                     <img class="icons" src="img/java.webp" alt="Java">
                     <img class="icons" src="img/python.png" alt="Python">
                     <img class="icons" src="img/jpa.png" alt="JPA">
@@ -30,14 +34,14 @@
                     <img class="icons" src="img/js.webp" alt="JavaScript">
                     <img class="icons" src="img/dart.png" alt="Dart">
 
-                    <h2 id="educacao">Educação</h2>
-                    <p><a href="https://ifpr.edu.br/paranavai/cursos-superiores/engenharia-de-software-bacharelado/">
+                    <h2 data-i18n="educacao" id="educacao">Educação</h2>
+                    <p data-i18n="educacao-descricao"><a href="https://ifpr.edu.br/paranavai/cursos-superiores/engenharia-de-software-bacharelado/">
                         Bacharelado em Engenharia de Software<br>
                         Instituto Federal do Paraná - Câmpus Paranavaí<br>
                         Fevereiro de 2023 - Atualmente         
                     </a></p>
 
-                    <h2 id="projetos">Projetos</h2>
+                    <h2 data-i18n="projetos" id="projetos">Projetos</h2>
 
                     <div class="carrossel">
                         <input type="radio" name="carrosel" id="slide-1" checked>
@@ -63,7 +67,7 @@
                     </div>
                     
                     <div class="contato">
-                    <h2>Contato</h2>
+                    <h2 data-i18n="contato">Contato</h2>
                     <a href="https://github.com/felxx"><button tabindex="-1"><img class="icons" src="img/github.png" alt="GitHub do Autor"></button></a>
                     <a href="https://www.linkedin.com/in/igor-felipe-738139282/"><button tabindex="-1"><img class="icons" src="img/linkedin.png" alt="LinkedIn do Autor"></button></a>
                     <a href="https://discord.gg/YzNGsWeW"><button tabindex="-1"><img class="icons" src="img/discord-logo.png" alt="Discord do Autor"|></button></a>

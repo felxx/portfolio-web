@@ -17,6 +17,16 @@ h1{
     text-shadow: 1px 1px 5px black;
 }
 
+.botao-traduzir{
+    float: right;
+    display: flex;
+    margin-right: 15px;
+
+    .icon-traduzir{
+        width: 40px;
+    }
+}
+
 .descricao{
     padding-top: 20px;
     font-size: 18px;
