@@ -21,10 +21,10 @@ h1{
     float: right;
     display: flex;
     margin-right: 15px;
+}
 
-    .icon-traduzir{
-        width: 40px;
-    }
+.icon-traduzir{
+    width: 40px;
 }
 
 .descricao{
