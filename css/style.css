@@ -17,6 +17,16 @@ h1{
     text-shadow: 1px 1px 5px black;
 }
 
+.foto-gato img{
+    margin-left: 15px;
+    float: left;
+    display: flex;
+    width: 15%;
+    height: 15%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 20px 10px #0000003f;
+}
+
 .botao-traduzir{
     float: right;
     display: flex;
@@ -181,7 +191,7 @@ textarea {
 
 .navegacao .nav-botao{
     border: 1px solid #000000;
-    padding: 10px;
+    padding: 7px;
     border-radius: 50%;
 }
 

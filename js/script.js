@@ -51,3 +51,19 @@ function traduzirPagina(linguagem) {
             elemento.textContent = linguagem[chave];
         }
     })};
+
+/* API DOS GATO */
+const cat_url = `https://api.thecatapi.com/v1/images/search`;
+ fetch(cat_url)
+    .then((response) => {
+    return response.json();
+    })
+        .then((data) => {
+        let imagesData = data;
+        imagesData.map(function(imageData) {
+            let image = document.createElement('img');
+            //use the url from the image object
+            image.src = `${imageData.url}`;
+            document.getElementById('foto-gato').appendChild(image);
+            });
+        })
