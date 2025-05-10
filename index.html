@@ -9,15 +9,13 @@
 
     <body>
         <main>
-            <div class="lateral">
-                <div class="botao-traduzir">
-                    <button onclick="alterarIdioma()"><img class="icon-traduzir" src="img/translate.svg" alt="Alterar idioma"></button>                
-                </div>
-                
-                <div id="foto-gato" class="foto-gato"></div>
+            <div id="lateral" class="lateral">
+                <button class="botao-traduzir" onclick="alterarIdioma()"><img class="icon-traduzir" src="img/translate.svg" alt="Alterar idioma"></button>                
+                <button class="botao-gato" onclick="mostrarGato()"><img class="icon-gato" src="img/cat.svg" alt="Mostrar gatinho"></button>
+                <div id="foto-gato" class="foto-gato hidden"></div>
             </div>
 
-            <div class="card">
+            <div id="card" class="card">
                 <div class="card-top">
                     <img style="border-radius: 50%; width: 35%" src="img/minha imagem.jpg" alt="Imagem do autor do portfólio">
                     <h1 class="nome">Igor Felipe</h1>
@@ -39,9 +37,11 @@
                     <img class="icons" src="img/dart.png" alt="Dart">
 
                     <h2 data-i18n="educacao" id="educacao">Educação</h2>
-                    <a href="https://ifpr.edu.br/paranavai/cursos-superiores/engenharia-de-software-bacharelado/"><p data-i18n="educacao-descricao">
-                        Bacharelado em Engenharia de Software || Instituto Federal do Paraná - Câmpus Paranavaí || Fevereiro de 2023 - Atualmente    
-                    </p></a>
+                    <a href="https://ifpr.edu.br/paranavai/cursos-superiores/engenharia-de-software-bacharelado/">
+                        <p data-i18n="curso">Bacharelado em Engenharia de Software</p>
+                        <p data-i18n="instituicao">Instituto Federal do Paraná - Câmpus Paranavaí</p>
+                        <p data-i18n="periodo">Fevereiro de 2023 - Atualmente</p>
+                    </a>
 
                     <h2 data-i18n="projetos" id="projetos">Projetos</h2>
 
@@ -70,9 +70,9 @@
                     
                     <div class="contato">
                     <h2 data-i18n="contato">Contato</h2>
-                    <a href="https://github.com/felxx"><button tabindex="-1"><img class="icons" src="img/github.png" alt="GitHub do Autor"></button></a>
-                    <a href="https://www.linkedin.com/in/igor-felipe-738139282/"><button tabindex="-1"><img class="icons" src="img/linkedin.png" alt="LinkedIn do Autor"></button></a>
-                    <a href="https://discord.gg/YzNGsWeW"><button tabindex="-1"><img class="icons" src="img/discord-logo.png" alt="Discord do Autor"|></button></a>
+                    <a href="https://github.com/felxx" tabindex="-1"><button><img class="icons" src="img/github.png" alt="GitHub do Autor"></button></a>
+                    <a href="https://www.linkedin.com/in/igor-felipe-738139282/" tabindex="-1"><button><img class="icons" src="img/linkedin.png" alt="LinkedIn do Autor"></button></a>
+                    <a href="https://discord.gg/YzNGsWeW" tabindex="-1"><button><img class="icons" src="img/discord-logo.png" alt="Discord do Autor"></button></a>
                     <button id="botao-email"><img class="icons" src="img/email.png" alt="Enviar e-mail para o autor"></button>
                 </div>
             </div>
@@ -80,7 +80,7 @@
 
         <div id="modal" class="modal hidden">
             <div class="modal-content">
-                <span class="fechar" id="fechar-modal">&times;</span>
+                <button class="fechar" id="fechar-modal">&times;</button>
                 <h2>Me contate:</h2>
                 <form id="formulario" action="https://formsubmit.co/igorfelipemonteirocontato@gmail.com" method="POST">
                     <div class="formulario">

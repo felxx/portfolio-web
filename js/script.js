@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     construirModal();
 });
 
+window.addEventListener('load', () => {
+    document.getElementById("card").classList.add('deslizar-card');
+    document.getElementById("lateral").classList.add('aparecer-botoes')
+});
+
+function mostrarGato(){
+    const fotoGato = document.getElementById("foto-gato");
+    fotoGato.classList.remove("hidden");
+}
+
 function construirModal() {
     const botaoEmail = document.getElementById("botao-email");
     const modal = document.getElementById("modal");
@@ -44,17 +54,16 @@ function carregarIdioma(idioma) {
 
 function traduzirPagina(linguagem) {
     document.querySelectorAll("[data-i18n]").forEach(elemento => {
-        console.log(elemento);
         const chave = elemento.getAttribute("data-i18n");
-        console.log(chave);
         if (linguagem[chave]) {
             elemento.textContent = linguagem[chave];
         }
     })};
 
-/* API DOS GATO */
+// API DOS GATO
+
 const cat_url = `https://api.thecatapi.com/v1/images/search`;
- fetch(cat_url)
+fetch(cat_url)
     .then((response) => {
     return response.json();
     })
@@ -62,7 +71,6 @@ const cat_url = `https://api.thecatapi.com/v1/images/search`;
         let imagesData = data;
         imagesData.map(function(imageData) {
             let image = document.createElement('img');
-            //use the url from the image object
             image.src = `${imageData.url}`;
             document.getElementById('foto-gato').appendChild(image);
             });
