@@ -2,10 +2,6 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.padrao a{
-    justify-content: center;
-}
-
 main{
     text-align: center;
 }
@@ -17,6 +13,20 @@ h1{
     text-shadow: 1px 1px 5px black;
 }
 
+button{
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #111111;
+}
+
+button:focus{
+    transform: scale(1.1);
+}
+
 .botao-gato{
     float: right;
     display: flex;
@@ -25,7 +35,7 @@ h1{
 
 .icon-gato{
     width: 40px;
-    color: #000000;
+    filter:brightness(0%)
 }
 
 .foto-gato img{
@@ -87,7 +97,12 @@ a:hover,:focus{
     background: linear-gradient(45deg, rgb(187, 187, 187) 0%, rgba(0, 0, 0, 1) 100%);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    padding: 40px;
+    padding: 40px;    
+}
+
+#minha-foto{
+    border-radius: 50%;
+    width: 35%;
 }
 
 .card-bottom{
@@ -165,18 +180,7 @@ textarea {
     border-radius: 5px;
     height: 35px;
     width: 80px;
-    transition: transform 0.4s ease-in-out;
 }
-
-.enviar:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px #111111;
-}
-
-.enviar:focus {
-    transform: scale(1.1);
-}
-
 
 .carrossel{
     overflow: hidden;
@@ -206,6 +210,7 @@ textarea {
 }
 
 .navegacao .nav-botao{
+    cursor: pointer;
     border: 1px solid #000000;
     padding: 7px;
     border-radius: 50%;
@@ -229,6 +234,10 @@ textarea {
 
 #slide-3:checked ~ .primeiro{
     margin-left: -200%;
+}
+
+#fechar-modal{
+    box-shadow: none;
 }
 
 @keyframes deslizar {
@@ -258,4 +267,59 @@ textarea {
 
 .aparecer-botoes{
     animation: aparecer 3s ease-in;
+}
+
+@media (max-width: 1199.98px) {
+    .card{
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+
+    #minha-foto{
+        width: 40%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    #minha-foto{
+        width: 50%;
+    }
+
+    .botao-traduzir{
+        position: fixed;
+        right: 10px;
+        bottom: 20px;
+        z-index: 1;
+    }
+
+    .botao-gato{
+        position: fixed;
+        right: 81px;
+        bottom: 20px;
+        z-index: 1;
+    }
+
+    .icon-gato, .icon-traduzir{
+        width: 50px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+
+    .email {
+        width: 95%;
+    }
 }

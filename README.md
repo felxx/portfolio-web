@@ -6,7 +6,7 @@ Futuras implementações:
 - [x] Carrossel de imagens na seção de projetos
 - [x] Formulário de contato
 - [x] Adição de API ao site
-- [ ] Auto-ajuste de acordo com a resolução de tela
-- [x] Tornar o site bilíngue (inglês e português)
+- [x] Auto-ajuste de acordo com a resolução de tela
+- [X] Tornar o site bilíngue (inglês e português)
 - [x] Transições e suavização da página
 - [ ] Adição de comentários ao código
