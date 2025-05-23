@@ -7,11 +7,13 @@ window.addEventListener('load', () => {
     document.getElementById("lateral").classList.add('aparecer-botoes')
 });
 
+// Função para o botão do gato, que mostra e esconde a imagem
 function mostrarGato(){
     const fotoGato = document.getElementById("foto-gato");
     fotoGato = fotoGato.classList.contains("hidden") ? fotoGato.classList.remove("hidden") : fotoGato.classList.add("hidden");
 }
 
+// Construtor genérico de modal, com suas devidas "operações"
 function construirModal() {
     const botaoEmail = document.getElementById("botao-email");
     const modal = document.getElementById("modal");
@@ -39,11 +41,13 @@ document.getElementById('slide-1').checked = true;
 
 let idiomaAtual = "pt";
 
+// Função para o botão de idioma, que troca entre português e inglês
 function alterarIdioma() {
     idiomaAtual = idiomaAtual == "pt" ? "en" : "pt";
     carregarIdioma(idiomaAtual);
 }
 
+// Carrega o json do idioma selecionado;
 function carregarIdioma(idioma) {
     fetch(`json/${idioma}.json`)
         .then(data => data.json())
@@ -52,6 +56,7 @@ function carregarIdioma(idioma) {
         });
 }
 
+// Função que traduz a página, pegando o atributo data-i18n de cada elemento
 function traduzirPagina(linguagem) {
     document.querySelectorAll("[data-i18n]").forEach(elemento => {
         const chave = elemento.getAttribute("data-i18n");
@@ -60,8 +65,8 @@ function traduzirPagina(linguagem) {
         }
     })};
 
-// API DOS GATO
 
+// API que pega a imagem do gato do thecatapi
 const cat_url = `https://api.thecatapi.com/v1/images/search`;
 fetch(cat_url)
     .then((response) => {

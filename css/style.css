@@ -33,12 +33,12 @@ button:focus{
     margin-right: 10px;
 }
 
-.icon-gato{
+.icon-gato, .icon-traduzir {
     width: 40px;
-    filter:brightness(0%)
+    filter: brightness(0%);
 }
 
-.foto-gato img{
+.foto-gato img {
     margin-right: 15px;
     margin-top: 10px;
     float: right;
@@ -159,8 +159,9 @@ a:hover,:focus{
     padding-bottom: 15px;
 }
 
-input,textarea {
-    width: 400px;
+input, textarea {
+    width: 100%;
+    max-width: 400px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ddd;
@@ -171,7 +172,8 @@ textarea {
 }
 
 .email {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .enviar {
@@ -283,35 +285,36 @@ textarea {
 
 @media (max-width: 767.98px) {
     body {
-         height: 150vh;
+        height: 150vh;
     }
 
-    .card{
+    .card {
         margin-left: 5%;
         margin-right: 5%;
         width: 90%;
     }
 
-    #minha-foto{
+    #minha-foto {
         width: 50%;
     }
 
-    .botao-traduzir{
+    .botao-traduzir {
         position: fixed;
         right: 5px;
         bottom: 20px;
         z-index: 1;
     }
 
-    .botao-gato{
+    .botao-gato {
         position: fixed;
         right: 85px;
         bottom: 20px;
         z-index: 1;
     }
 
-    .icon-gato, .icon-traduzir{
+    .icon-gato, .icon-traduzir {
         width: 50px;
+        filter: none;
     }
 
     .modal-content {
@@ -319,22 +322,19 @@ textarea {
         padding: 20px;
     }
 
-    input, textarea {
+    input, textarea, .email {
         width: 95%;
+        max-width: none;
     }
 
-    .email {
-        width: 95%;
-    }
-
-    .foto-gato{
+    .foto-gato {
         right: 5px;
         bottom: 90px;
         position: fixed;
         z-index: 1;
     }
-
-    .foto-gato img{
+    
+    .foto-gato img {
         width: 80%;
         height: 80%;
     }
