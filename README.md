@@ -9,4 +9,4 @@ Futuras implementações:
 - [x] Auto-ajuste de acordo com a resolução de tela
 - [X] Tornar o site bilíngue (inglês e português)
 - [x] Transições e suavização da página
-- [ ] Adição de comentários ao código
+- [x] Adição de comentários ao código
