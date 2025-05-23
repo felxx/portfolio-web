@@ -282,6 +282,10 @@ textarea {
 }
 
 @media (max-width: 767.98px) {
+    body {
+         height: 150vh;
+    }
+
     .card{
         margin-left: 5%;
         margin-right: 5%;
@@ -294,14 +298,14 @@ textarea {
 
     .botao-traduzir{
         position: fixed;
-        right: 10px;
+        right: 5px;
         bottom: 20px;
         z-index: 1;
     }
 
     .botao-gato{
         position: fixed;
-        right: 81px;
+        right: 85px;
         bottom: 20px;
         z-index: 1;
     }
@@ -321,5 +325,17 @@ textarea {
 
     .email {
         width: 95%;
+    }
+
+    .foto-gato{
+        right: 5px;
+        bottom: 90px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .foto-gato img{
+        width: 80%;
+        height: 80%;
     }
 }

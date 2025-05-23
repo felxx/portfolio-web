@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
 
 function mostrarGato(){
     const fotoGato = document.getElementById("foto-gato");
-    fotoGato.classList.remove("hidden");
+    fotoGato = fotoGato.classList.contains("hidden") ? fotoGato.classList.remove("hidden") : fotoGato.classList.add("hidden");
 }
 
 function construirModal() {
